@@ -13,14 +13,16 @@ Next you’ll need a way to keep track of the changes you make to your code as i
 
 What is git?  Git is open source version control software that helps you track changes to your code as it is developed.  It is the de facto standard for developers to help them keep track of changes in their code.
 
-Next you’ll need to install Node.  Node simply executes your code so that you can view it in your browser
-*[Download Node](https://nodejs.org/en/download/)
+Next you’ll need to install Node.  Node simply executes your code so that you can view it in your browser:
+
+* [Download Node](https://nodejs.org/en/download/)
 
 As part of the installation you just did for Node, a program called NPM was installed.  NPM checks for packages of code on your computer and looks for dependencies on other packages to help you know which versions of code you are working with and help you find what is missing.  
 
 While you can download the Github application for moving files from your computer to Github, it's also really useful to know and understand command line.  
-*[Learn how to use command line](https://www.davidbaumgold.com/tutorials/command-line/)
-*[Step by step guide for command line](https://try.github.io/levels/1/challenges/1)
+
+* [Learn how to use command line](https://www.davidbaumgold.com/tutorials/command-line/)
+* [Step by step guide for command line](https://try.github.io/levels/1/challenges/1)
 
 ##Don't fear mistakes
 
@@ -87,7 +89,6 @@ Each commit should do one thing, and each PR should be one specific improvement.
 TODO: this
 
 `git clone`
-
 
 
 ### Editing and Testing
@@ -246,33 +247,8 @@ TODO: typically there's no reason to publish your fork, you can reference the SH
 Before you start a project, please do thorough research that something like what you want to make
 doesn't already exist.
 
+Don't start from scratch.  Just like dribble rebounds, think about how you can improve upon something you have seen that is already out there.  Starting a brand new open source project should be your last resort.
 
-### Searching for Existing Projects
-
-```shell
-$ npm search
-```
-
-Sometimes you find a project that's old and no longer maintained, but otherwise solves your problems.
-See the [using a fork](TODO) section above for more info.
-
-<aside>
-**Bonus:** Make a list as you go with notes.
-If you find a module you like, you can use your notes to improve the "See Also" section of the
-modules you found in your research by sending them PRs.
-If you don't find a module you like and end up creating your own, you can turn these notes into a
-"See Also" section for your module!
-</aside>
-
-
-### Starting a Project
-
-Starting a new open source project should be your last resort.
-Why?
-
-**Best Practice:** Don't publish something to `npm` until it has some reasonable minimal functionality.
-
-Remember: you can always use `npm link` or `npm install user/repo`
 
 ### Naming the project
 
@@ -281,13 +257,13 @@ Some projects have guidelines or conventions on how to do this.
 For instance, AngularJS components are usually named `angular-something`, Gulp plugins are
 `gulp-something`, and Karma plugins are `karma-something`.
 
-### Writing a Readme
+# Designing and Writing a Readme
 
-A good readme should have the following parts.
+A good readme should have the following parts:
 
-# Project Title
+## Project Title
 
-One Paragraph of project description goes here
+One Paragraph of project description goes here ideally with a live link to a demo
 
 ## Getting Started
 
@@ -345,9 +321,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Links] - The web framework used
 
 ## Contributing
 
@@ -355,11 +329,11 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+Give attribution!
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
