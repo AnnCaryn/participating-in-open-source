@@ -1,31 +1,34 @@
-# Participating in Open Source
+# Participating in Open Source for Designers
 
-I wrote this guide to help anyone start contributing to open source projects on GitHub.
-First, thanks for your initiative to help out!
-One of the reasons that open source is so great is because of the eagerness of others to help.
+Special thanks to Brian Ford who crafted the original version of this document that was specifically geared to developers.  This version utilizes his framework as a tool to help designers get involved in open source development.
 
-Whether you've been programming for many years or are brand new, there are a few things you need to know to effectively use GitHub.
-There are many guides on "how" to use GitHub from a technical perspective: which buttons to press, what commands to run, etc.
-Below I've included some of my favorites.
+So, let's get started.
+You’ll need a place to store and publish your code.  Github is the place. Github helps you track your design process across teams and saves snapshots of your entire codebase, allowing you to easily share work with designers and developers.  There are lots of design tools that try to do this work as well, but being able to utilize the same tools as your developers makes a huge difference in productivity. 
+* [Create a github account](https://github.com/join
+https://help.github.com/articles/signing-up-for-a-new-github-account/)
 
-<aside>
-Please [tweet](https://twitter.com/briantford) me or file an [issue](https://github.com/btford/participating-in-open-source/issues) if you know of a good addition to this list!
-</aside>
+Next you’ll need a way to keep track of the changes you make to your code as it is developed:
 
-* [git-it](https://github.com/jlord/git-it) – an interactive tutorial for learning how to use `git` and GitHub
-* [GitHub's help page](https://help.github.com/) – find advice on specific topics
+* [Download and install git](http://git-scm.com/download)
+
+What is git?  Git is open source version control software that helps you track changes to your code as it is developed.  It is the de facto standard for developers to help them keep track of changes in their code.
+
+Next you’ll need to install Node.  Node simply executes your code so that you can view it in your browser
+*[Download Node](https://nodejs.org/en/download/)
+
+As part of the installation you just did for Node, a program called NPM was installed.  NPM checks for packages of code on your computer and looks for dependencies on other packages to help you know which versions of code you are working with and help you find what is missing.  
+
+While you can download the Github application for moving files from your computer to Github, it's also really useful to know and understand command line.  
+*[Learn how to use command line](https://www.davidbaumgold.com/tutorials/command-line/)
+*[Step by step guide for command line](https://try.github.io/levels/1/challenges/1)
+
+##Don't fear mistakes
 
 At first, it's intimidating to publicize your work on GitHub.
 Few guides address "how" you should use it in terms of etiquette, best practices, and expectations.
-This guide aims to fill in those gaps.
-
 As you read this guide, please keep in mind that it's okay (and even expected!) to make mistakes.
 You don't have to memorize every minute detail.
 Do the best you can and learn as you go.
-
-This guide assumes you are dealing with a JavaScript module installed via `npm` or `bower` that is hosted on GitHub.
-Aside from commands dealing with `npm` or `bower`, most of this advice applies to other platforms and languages.
-
 
 
 ## Asking a Question
@@ -110,7 +113,7 @@ or symlinks
 
 As far as code style, just try to imitate the style of existing code.
 Don't sweat over this too much.
-If the maintainer doesn't like how your code looks, they'll suggest changes.
+If the maintainer doesn't like how your code looks, they'll suggest changes.  
 
 Most projects have a set of tests to make sure that the existing functionality of the code stays the same as you make changes.
 This helps keep the software stable.
@@ -282,45 +285,93 @@ For instance, AngularJS components are usually named `angular-something`, Gulp p
 
 A good readme should have the following parts.
 
-#### One Sentence Explanation
+# Project Title
 
-#### "Install"
+One Paragraph of project description goes here
 
-#### "See Also"
+## Getting Started
 
-This is really important.
-If there are other modules with similar functionality, your module should explain how it differs
-from each one.
-This section should link to the other modules.
-This will help someone decide when to use your module.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Writing tests
+### Prerequisites
 
-There are many ways to write tests.
-The important thing is that if the tests fail, the process should exist with an error code.
-You can use `assert` or `if (condition) { process.exit(1) }` to achieve this.
+What things you need to install the software and how to install them
 
-I like to use `jasmine-node`.
+```
+Give examples
+```
 
-Bonus points if you have a CI tool like [TravisCI][]
+### Installing
 
-### Publishing to npm
+A step by step series of examples that tell you have to get a development env running
 
-Before you publish:
+Say what the step will be
 
-1. You have a `README.md` that explains what the module does.
-   It should incude a `See Also` section that links to other similar packages.
-   See TODO for an example.
-2. You should have [tests](#writing-tests).
-   The tests should run with `npm test`, and they should pass.
+```
+Give the example
+```
 
-<aside>
-**Bonus:** Find someone else who will help you maintain the project.
-It's great to have help reviewing issues and merging PRs.
-You never know how much free time you'll have in the future.
-It would be unfortunate if bugs unfixed or PRs unmerged on an otherwise useful project.
-</aside>
+And repeat
 
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
 
 
 ## Etiquette
@@ -353,23 +404,18 @@ This is also problematic because it puts the blame on others.
 Maybe you could explain the issue better.
 
 
-
 It's perfectly normal to get frustrated.
-Programming is one of the hardest things people do!
 Regardless, it's important to consider the perspectives of others.
-Community is more valuable than code, and being nice is more important than being right.
+Community is more valuable than code, and being nice is more important than being right.  
+Help others where you can, always.
 
 
 ## Conclusion
 
-Thanks for taking the time to read this.
-I hope this guide will help you get what you want out of open source.
-If you have any suggestions, please create a [pull request](https://github.com/btford/participating-in-open-source/pulls) or [issue](https://github.com/btford/participating-in-open-source/issues).
+I hope this guide will help you as you learn your way around a codebase, become more productive with your developers and learn to scale your designs through open source.  Special thanks again to Brian Ford for his initial framework.
+If you have any suggestions, please create a [pull request] - Would love to hear your feedback!
 
 
 ## License
 MIT
 
-![Analytics](https://ga-beacon.appspot.com/UA-48392963-1/btford/participating-in-open-source?pixel)
-
-[TravisCI]: TODO
